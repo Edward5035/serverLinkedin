@@ -14,6 +14,7 @@ app.get('/generate-leads', async (req, res) => {
       url: 'https://generate-linkedin-leads.p.rapidapi.com/backend/leads/leads/',
       headers: {
         'content-type': 'application/json',
+        'Content-Security-Policy': "script-src 'self' 'https://ssl.google-analytics.com';",
         'X-RapidAPI-Key': '6c4153b579msh3b88fb9e42fb3dap1c3822jsn700d8fa34f4a',
         'X-RapidAPI-Host': 'generate-linkedin-leads.p.rapidapi.com'
       },
